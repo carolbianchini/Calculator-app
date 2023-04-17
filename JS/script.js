@@ -17,10 +17,33 @@ function calcular () {
     if(resultado){
         document.getElementById('resultado').innerHTML = eval(resultado);
     }else{
-        alert('insita um valor');
+        alert('Insira uma informação válida');
     }
 }
 
 
+const toggle = document.querySelector('.toggle input');
+
+function toggleRetroMode() {
+    document.body.classList.toggle("retro");
+  }
+
+  function loadTheme() {
+    const retroMode = localStorage.getItem("retro");
   
+    if (retroMode) {
+        toggleRetroMode();
+    }
+  }
   
+  loadTheme();
+  
+  toggle.addEventListener("change", function () {
+    toggleRetroMode();
+
+    localStorage.removeItem("retro");
+  
+    if (document.body.classList.contains("retro")) {
+      localStorage.setItem("retro", 1);
+    }
+  });
