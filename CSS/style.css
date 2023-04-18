@@ -84,6 +84,7 @@ header p{
     width: 5rem;
     height: 3rem;
     cursor: pointer;
+    color: black;
 }
 
 .backspace {
@@ -144,17 +145,17 @@ a {
     body {
         width: 100%;
         height: auto;
-        margin: 0 15px;
-    }
-
-    .content {
-        margin:0 35px;
+        margin: 0 auto;
     }
 
     header {
         width: auto;
         margin: 4rem auto;
 
+    }
+
+    .content {
+        margin: 0 15px 0 15px;
     }
 
     tr {
@@ -179,6 +180,8 @@ a {
         position: relative;
         left: 4rem;
     }
+
+    
 
     
 }
