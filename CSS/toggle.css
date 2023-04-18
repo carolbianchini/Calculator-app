@@ -1,0 +1,44 @@
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 3.5rem;
+    height: 1.5rem;
+    margin: 1.1rem 1rem;
+  }
+  
+  .toggle input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #364F6B;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 2.1rem;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.2rem;
+    width: 1.2rem;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(1.6rem);
+    -ms-transform: translateX(1.6rem);
+    transform: translateX(1.6rem);
+  }
+  

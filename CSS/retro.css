@@ -1,0 +1,47 @@
+.retro {
+    background-color: var(--background-retro);
+ }
+
+.retro button {
+    background-color: var(--button-retro);
+    font-family: var(--font-retro);
+    font-size: 1.5rem;
+}
+
+.retro .content {
+    background-color: var(--retro-calc-bg);
+
+}
+
+.retro #resultado {
+   background-color: var(--retro-input);
+   font-family: var(--font-retro);
+   font-size: 1.7rem;
+}
+
+.retro .slider {
+    background-color: var(--retro-calc-bg); 
+}
+
+.retro #btn-change {
+    background-color:var(--orange-button);
+}
+
+.retro #btn-change1 {
+    width: 10.5rem; 
+    background-color:var(--orange-button);
+}
+
+.retro #btn-change2 {
+    width: 10.5rem; 
+    background-color: var(--brown-button);
+}
+
+.retro .botao:hover {
+    background-color: var(--hover-retro);
+}
+
+.retro .botao:focus {
+    background-color:  var(--hover-retro);
+}
+

@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/style.css">
   <title>Calculator app</title>
-  <link rel="stylesheet" type="text/css" href="https://fontmeme.com/fonts/lcd-lcd-mono-font/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
-<body class="retro">
+<body>
 
 <header>
   <h1>Calculadora</h1>
@@ -24,13 +28,13 @@
 </header>
 <div class="content">
 
-<p id="resultado"> </p>
+<p id="resultado"></p>
 <table>
   <tr>
     <td><button class="botao" onclick="insert('7')">7</button></td>
     <td><button class="botao" onclick="insert('8')">8</button></td>
     <td><button class="botao" onclick="insert('9')">9</button></td>
-    <td><button class="botao" onclick="back()"><img src="images/backspace-fill.svg" alt=""></button></td>
+    <td><button class="botao" id="btn-change" onclick="back()"><img src="images/backspace-fill.svg" alt="del" class="backspace"></button></td>
   </tr>
 
   <tr>
@@ -55,8 +59,8 @@
   </tr>
 
   <tr>
-    <td colspan="2"><button class="botao" style="width: 10.5rem; background-color: #FC5185;" onclick="clean('')">reset</button></td>
-    <td colspan="2"><button rowspan="2" class="botao" style="width: 10.5rem; background-color: #FC5185;" onclick="calcular()">=</button></td>
+    <td colspan="2"><button class="botao" id="btn-change1" onclick="clean('')">reset</button></td>
+    <td colspan="2"><button rowspan="2" class="botao" id="btn-change2" onclick="calcular()">=</button></td>
   </tr>
 </table>
 
@@ -64,7 +68,6 @@
   <script src="JS/script.js"></script>
 </body>
 <footer class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">Your Name Here</a>.
+  Coded by <a href="https://www.linkedin.com/in/ana-carolina-bianchini-desenvolvedora-front-end/">Ana Carolina Bianchini</a>.
 </footer>
 </html>

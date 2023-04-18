@@ -21,6 +21,7 @@ function calcular () {
     }
 }
 
+//*Funcionalidade toggle
 
 const toggle = document.querySelector('.toggle input');
 

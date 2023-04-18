@@ -1,12 +1,36 @@
+@import url("../CSS/toggle.css");
+
+@import url("../CSS/retro.css");
+
 @font-face {
     font-family: 'digital';
     src: url('../fontes/digital-7.ttf') format('truetype');
 }
 
+:root {
+    --button-blue: #def8f2;
+    --background-blue: #F5F5F5;
+    --pink-button: #FC5185;
+    --dark-blue-button: #3FC1C9;
+    --blue-input:#a7cacc;
+    --blue-calc-bg: #364F6B;
+    --button-retro:#fae1c1;
+    --background-retro:#FFF3E2;
+    --retro-calc-bg:#2D2424;
+    --retro-input:#E0C097;
+    --orange-button: #B85C38;
+    --brown-button:#5C3D2E;
+    --hover-retro:#FFF3E2;
+
+
+    --font-theme-digital: 'digital';
+    --font-header: 'DynaPuff', cursive;
+    --font-retro: 'Press Start 2P', cursive;
+}
+
 body {
     height: auto;
-    background-color: #F5F5F5;
-    width: 100%;
+    background-color: var(--background-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,23 +44,51 @@ header {
     justify-content: space-between;
     width: 25rem;
     margin: 2rem;
+    font-family: var(--font-header);
 }
 
-h1 {
-    font-family: 'DynaPuff', cursive;
+header h1 {
     text-align: end;
     width: auto;
     font-size: 1.5rem;
 }
 
+header p{
+    position: relative;
+    left: 4.2rem;
+    top: 0.5rem;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+#resultado {
+    font-family:var( --font-theme-digital);
+    background-color: var(--blue-input);
+    width: 19rem;
+    height: 5rem;
+    text-align: end;
+    line-height: 5rem;
+    padding: 0 20px;
+    overflow:hidden;
+    border-radius: 0.3rem;
+    margin: 20px 0 20px;
+}
+
 .botao {
-    font-family: 'digital';
+    font-family: var(--font-theme-digital);
     font-size: 2rem;
     border: none;
     border-radius: 0.2rem;
     margin: 2px 2px;
-    background-color: #F1F6F5;
+    background-color: var(--button-blue);
     transition: 420ms;
+    width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.backspace {
+    width: 1.4rem;
 }
 
 .botao:hover {
@@ -47,106 +99,43 @@ h1 {
     background-color: white;
 }
 
+#btn-change {
+    background-color:var(--pink-button);
+}
+
+#btn-change1 {
+    width: 10.5rem; 
+    background-color:var(--pink-button);
+}
+
+#btn-change2 {
+    width: 10.5rem; background-color: var(--dark-blue-button);
+}
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 25rem;
-    height: 450px;
-    background-color: #364F6B;
+    height: 28rem;
+    background-color: var(--blue-calc-bg);
     border-radius: 0.5rem;
-    margin: 0 0;
-}
-
-#resultado {
-    font-family: 'digital';
-    background-color: #3FC1C9;
-    width: 19rem;
-    color: white;
-    position:initial;
-    height: 5rem;
-    margin: 0.5rem auto;
-    text-align: end;
-    text-align:end;
-    line-height: 5rem;
-    padding: 0 20px;
-    overflow:hidden;
-    border-radius: 0.3rem;
-    margin: 20px 0 20px;
-}
-
-.botao {
-    width: 5rem;
-    height: 3rem;
 }
 
 #resultado {
     color: black;
-    font-size: 50px;
+    font-size: 3rem;
 }
-
-header p{
-    position: relative;
-    left: 4.2rem;
-    top: 0.5rem;
-    text-transform: capitalize;
-    font-size: 13px;
-    font-family: 'DynaPuff', cursive;
-}
-
-.toggle {
-    position: relative;
-    display: inline-block;
-    width: 3.5rem;
-    height: 1.5rem;
-    margin: 1.1rem 1rem;
-  }
-  
-  .toggle input {
-    display: none;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 34px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 1.2rem;
-    width: 1.2rem;
-    left: 4px;
-    bottom: 2px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 50%;
-  }
-  
-  input:checked + .slider {
-    background-color: #364F6B;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
 
 .attribution {
-    margin: 4rem 0;
+    margin: 3rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.8rem;
+    color: black;
+}
+
+a {
+    color: black; 
 }
