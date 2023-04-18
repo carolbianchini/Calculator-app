@@ -21,8 +21,6 @@
     --orange-button: #B85C38;
     --brown-button:#5C3D2E;
     --hover-retro:#FFF3E2;
-
-
     --font-theme-digital: 'digital';
     --font-header: 'DynaPuff', cursive;
     --font-retro: 'Press Start 2P', cursive;
@@ -45,6 +43,7 @@ header {
     width: 25rem;
     margin: 2rem;
     font-family: var(--font-header);
+    position: relative;
 }
 
 header h1 {
@@ -138,4 +137,48 @@ header p{
 
 a {
     color: black; 
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0 15px;
+    }
+
+    .content {
+        margin:0 35px;
+    }
+
+    header {
+        width: auto;
+        margin: 4rem auto;
+
+    }
+
+    tr {
+        width: auto;
+    }
+
+    header h1 {
+        text-align: end;
+        width: auto;
+        font-size: 1.5rem;
+        position: relative;
+        right: 4rem;
+    }
+
+    header p{
+        position: relative;
+        left: 3.7rem;
+        bottom: 3rem;
+    }
+
+    .toggle {
+        position: relative;
+        left: 4rem;
+    }
+
+    
 }
