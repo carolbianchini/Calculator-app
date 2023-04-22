@@ -1,4 +1,4 @@
-<h1>Calculadora com alternância de temas</h1>
+<h1>Calculadora com alternância de tema</h1>
 
 ## Índice
 
